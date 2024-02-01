@@ -6,7 +6,6 @@ import useData from "./../../hooks/useData";
 const Featured = () => {
   const { data: products, error } = useData("/products/featured");
 
-  console.log("products", products);
   return (
     <section className="featured_products">
       <h2 className="">Featured Products</h2>

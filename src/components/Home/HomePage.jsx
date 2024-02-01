@@ -6,6 +6,7 @@ import Featured from "./Featured";
 import useData from "./../../hooks/useData";
 import config from "../../config.json";
 import SingleProduct from "./../SingleProduct/SingleProduct";
+import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   const { data, error } = useData("/products");
@@ -15,9 +16,7 @@ const HomePage = () => {
       <HeroSection
         title="But iPhone 14 Pro"
         subtitle="experience3 the power of the latest iPhone 14 with our most Pro camera ever."
-        link={
-          "https://grimclown-cartwish.netlify.app/product/65bb4f1e61d947e5afa3127e"
-        }
+        link={<NavLink to={`/product/65bb4f1e61d947e5afa3127e`}></NavLink>}
         image={iphone}
       />
       <Featured />

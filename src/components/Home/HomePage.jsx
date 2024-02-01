@@ -13,7 +13,7 @@ const HomePage = () => {
       <HeroSection
         title="But iPhone 14 Pro"
         subtitle="experience the power of the latest iPhone 14 with our most Pro camera ever."
-        link={`${config.backendURL}/product/65bb4f1e61d947e5afa3127e`}
+        link={"/product/65bb4f1e61d947e5afa3127e"}
         image={iphone}
       />
       <Featured />

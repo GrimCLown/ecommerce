@@ -5,6 +5,8 @@ import mac from "../../assets/mac-system-cut.jfif";
 import Featured from "./Featured";
 import useData from "./../../hooks/useData";
 import config from "../../config.json";
+import SingleProduct from "./../SingleProduct/SingleProduct";
+
 const HomePage = () => {
   const { data, error } = useData("/products");
 
@@ -13,7 +15,7 @@ const HomePage = () => {
       <HeroSection
         title="But iPhone 14 Pro"
         subtitle="experience the power of the latest iPhone 14 with our most Pro camera ever."
-        link={"/product/65bb4f1e61d947e5afa3127e"}
+        link={"/65bb4f1e61d947e5afa3127e"}
         image={iphone}
       />
       <Featured />

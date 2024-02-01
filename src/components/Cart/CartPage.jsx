@@ -10,6 +10,7 @@ import CartContext from "../Context/CartContext";
 import { addToCartAPI } from "./../services/cartServices";
 import { toast } from "react-toastify";
 import { checkoutAPI } from "../services/orderServices";
+import config from "../../config.json";
 
 setAuthToken(getJwt());
 const CartPage = () => {
@@ -44,7 +45,7 @@ const CartPage = () => {
     <section className="align_center cart_page">
       <div className="align_center user_info">
         <img
-          src={`http://localhost:5000/profile/${userObj?.profilePic}`}
+          src={`${config.backendURL}/profile/${userObj?.profilePic}`}
           alt="user profile"
         />
         <div className="">

@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
+import config from "../../config.json";
 
 const HeroSection = ({ title, subtitle, link, image }) => {
   return (

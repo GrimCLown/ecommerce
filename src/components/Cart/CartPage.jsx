@@ -19,8 +19,6 @@ const CartPage = () => {
   const { cart, addtoCart, removeFromCart, updateCart, setCart } =
     useContext(CartContext);
 
-  console.log("cart", cart);
-
   useEffect(() => {
     let total = 0;
     cart.forEach((item) => {
